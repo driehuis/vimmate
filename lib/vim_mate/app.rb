@@ -22,6 +22,7 @@ module VimMate
     widget :files_pane
     widget :file_popup
     widget :files_filter_term
+    widget :config_window
 
     def add_path(path)
       file_tree.initial_adding do
