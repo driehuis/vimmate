@@ -1,3 +1,12 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gemspec
+gem 'activesupport'
+gem 'atk'
+gem 'gtk2'
+gem 'glib2'
+gem 'cairo'
+gem 'pkg-config'
+gem 'gdk_pixbuf2'
+gem 'pango'
+gem 'i18n'
+gem 'listen', '~> 2.0'
