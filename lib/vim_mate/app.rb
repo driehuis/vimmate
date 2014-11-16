@@ -18,6 +18,8 @@ module VimMate
     widget :tree_scroller
     widget :main_pane
     widget :general_config
+    #widget :more_config
+    #widget :advanced_config
     widget :files_filter_button
     widget :files_pane
     widget :file_popup

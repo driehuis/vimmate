@@ -366,6 +366,7 @@
             <child>
               <object class="GtkVBox" id="MoreConfig">
                 <property name="visible">True</property>
+                <property name="sensitive">False</property>
                 <child>
                   <placeholder/>
                 </child>
@@ -378,6 +379,7 @@
               <object class="GtkLabel" id="label2">
                 <property name="visible">True</property>
                 <property name="label" translatable="yes">More</property>
+                <property name="sensitive">False</property>
               </object>
               <packing>
                 <property name="position">1</property>
@@ -387,6 +389,7 @@
             <child>
               <object class="GtkVBox" id="AdvancedConfig">
                 <property name="visible">True</property>
+                <property name="sensitive">False</property>
                 <child>
                   <placeholder/>
                 </child>
@@ -398,6 +401,7 @@
             <child type="tab">
               <object class="GtkLabel" id="label3">
                 <property name="visible">True</property>
+                <property name="sensitive">False</property>
                 <property name="label" translatable="yes">Advanced</property>
               </object>
               <packing>
