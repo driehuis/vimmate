@@ -15,6 +15,12 @@ List of things to do:
 = TODO from Rewrite
 - re-enable SVN support
 
+= Minor issues
+- Tags tree is not hooked up.
+- Double clicking a directory in tree view should expand the branch, not open the
+  directory in vim.
+- Many preferences can only be set in ~/.vimmaterc
+
 
 /home/niklas/ruby/VimMate/bin/../lib/file_tree_controller.rb: line 150
    Gtk-CRITICAL **:gtk_tree_model_row_has_child_toggled: assertion `path != NULL' failed
