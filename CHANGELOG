@@ -1,5 +1,11 @@
 = Changelog
 
+=== Version WIP
+
+- Fix crash when clicking Preferences
+- Rework INotifyDirectory plugin to use the Listen gem instead. This pushes
+  the black magic involved in monitoring file changes out of vimmate.
+
 === Version 0.6.6
 - # 15198: After a file was opened in Vim, the focus was not in Vim, so if you
   started typing, you would type in the file list, not in Vim. This has been
