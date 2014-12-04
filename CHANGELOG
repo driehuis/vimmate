@@ -2,6 +2,8 @@
 
 === Version WIP
 
+Local changes by Bert Driehuis 
+
 - Fix crash when clicking Preferences
 - Rework INotifyDirectory plugin to use the Listen gem instead. This pushes
   the black magic involved in monitoring file changes out of vimmate.

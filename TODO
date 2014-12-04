@@ -25,3 +25,6 @@ List of things to do:
 /home/niklas/ruby/VimMate/bin/../lib/file_tree_controller.rb: line 150
    Gtk-CRITICAL **:gtk_tree_model_row_has_child_toggled: assertion `path != NULL' failed
 
+= Known issues
+- The inotify implementation does not check to see if the setting of the
+  fs.inotify.max_user_instances system parameter has a sane value (relevant for Linux)
