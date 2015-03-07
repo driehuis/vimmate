@@ -21,6 +21,19 @@ class FileTreeStore < ActiveWindow::ActiveTreeStore
   end
 
   def add_path(path, parent=nil)
+    # This magic is necessary because the Listen.to gem doesn't
+    # seem to report directory creation. When later a file gets
+    # added to a directory we know nothing about, we add the
+    # missing directory instead.
+    dirname = File.dirname(path)
+    if !File.directory?(path) && !find_by_full_path(dirname)
+      path = dirname
+      while (parent = find_by_full_path(dirname)) == nil
+        path = dirname.dup
+        dirname.gsub!(%r{/[^/]*$}, '')
+      end
+    end
+
     unless excludes?(File.expand_path(path))
       file = ListedFile.create(:full_path => path)
       iter = add file, parent || find_by_full_path( File.dirname(path) )
